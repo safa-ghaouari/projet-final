@@ -1,0 +1,103 @@
+/* Styles pour le header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: bisque; /* Couleur de fond pour le header */
+            color: black; /* Couleur du texte pour le header */
+        }
+        
+        .f1 h1 {
+            margin: 0;
+        }
+        
+        .f3 a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: black; /* Couleur des liens pour les rendre lisibles */
+        }
+
+        /* Styles pour le contenu principal avec une image de fond */
+        .content {
+            background-image: url('phoo.jpeg'); /* Remplacez 'image-de-fond.jpg' par le chemin de votre image */
+            background-size: cover; /* Ajuste l'image pour qu'elle couvre toute la div */
+            background-position: center; /* Centre l'image dans la div */
+            background-repeat: no-repeat; /* Empêche l'image de se répéter */
+            padding: 20px; /* Ajoute un peu d'espace autour du contenu */
+            min-height: 80vh; /* Assure que le contenu occupe au moins 80% de la hauteur de la fenêtre */
+        }
+        
+        /* Style pour le texte à l'intérieur de .content */
+        .content p {
+            color: #333; /* Couleur du texte pour contraster avec l'image de fond */
+            padding: 10px;
+            margin-left: 80px;
+            margin-right: 80px;
+            
+        }
+        #t{
+           margin-left: 50px;
+           margin-right: 50px; 
+           color:ghostwhite;
+        }
+        #q{
+            background-color: gainsboro;
+            color: black;
+            margin-top: 70px;
+            font-size: 140%;
+        }
+        /* Style général pour le footer */
+footer {
+    background-color: lemonchiffon;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin: 10px 0;
+}
+
+/* Styles pour la section de contact */
+.footer-section.contact h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section.contact p {
+    margin: 5px 0;
+}
+
+/* Styles pour la section des réseaux sociaux */
+.footer-section.social-media h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footer-section.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Styles pour la section de copyright */
+.footer-section.copyright p {
+    font-size: 0.9em;
+    margin-top: 10px;
+    color: #ccc;
+}
+/*register style*/

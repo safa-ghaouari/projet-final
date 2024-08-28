@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie de Photos</title>
+    <style>
+        /* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Gallery Container Styles */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Gallery Item Styles */
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+}
+
+/* Image Styles */
+.gallery-image {
+    width: 200px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery-image:hover {
+    transform: scale(1.1);
+}
+
+/* Paragraph Styles */
+.gallery-item p {
+    margin-top: 10px;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+
+<div class="gallery-container">
+    <div class="gallery-item">
+        <img src="game.jpg" alt="Image 1" class="gallery-image" onclick="openPage('page1.html')">
+        <p>The Inheritance Games" est un roman de Jennifer Lynn Barnes. Il raconte l'histoire d'Avery Grambs, une adolescente qui hérite soudainement d'une immense fortune d'un milliardaire qu'elle ne connaît pas, Tobias Hawthorne. Pour recevoir cet héritage, Avery doit vivre dans le manoir de la famille Hawthorne, aux côtés des petits-enfants de Tobias, qui sont déterminés à découvrir pourquoi leur grand-père a tout laissé à une étrangère. Le livre est rempli de mystères, d'énigmes et de rivalités.</p>
+    </div>
+    <div class="gallery-item">
+        <img src="fashion.jpg" alt="Image 2" class="gallery-image" onclick="openPage('page2.html')">
+        <p>The Fashion Book" est un ouvrage de référence publié par Phaidon, souvent considéré comme une encyclopédie de la mode. Il présente une collection exhaustive des figures les plus influentes de l'industrie de la mode, allant des designers iconiques aux photographes renommés, en passant par les modèles, les stylistes, et autres personnalités marquantes. Chaque entrée comprend une biographie succincte, des informations sur l'influence de la personne dans le monde de la mode, ainsi que des illustrations ou photographies représentatives de leur travail. Ce livre est un incontournable pour les amateurs de mode, les étudiants et les professionnels, offrant une vue d'ensemble sur l'évolution et les tendances de la mode au fil des décennies.</p>
+    </div>
+    <div class="gallery-item">
+        <img src="astro.jpg" alt="Image 3" class="gallery-image" onclick="openPage('page3.html')">
+        <p>Description de l'image 3</p>
+    </div>
+    <div class="gallery-item">
+        <img src="code.jpeg" alt="Image 4" class="gallery-image" onclick="openPage('page4.html')">
+        <p>Description de l'image 4</p>
+    </div>
+</div>
+
+<script src="script.js">
+    function openPage(page) {
+    window.location.href = page; // Ouvre la page spécifiée
+}
+</script>
+</body>
+</html>
