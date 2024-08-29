@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie de Produits</title>
+    <style>
+        /* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: beige;
+}
+
+/* Gallery Container Styles */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Product Item Styles */
+.product-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Image Styles */
+.product-image {
+    width: 200px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Price Styles */
+.price {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Button Styles */
+.add-to-cart {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3;
+}
+    </style>
+</head>
+<body>
+
+<div class="gallery-container">
+    <div class="product-item">
+        <img src="roomf1.jpeg" alt="Produit 1" class="product-image">
+        <p class="price">Prix : 750€</p>
+        <button class="add-to-cart" onclick="addToCart('Produit 1')">Ajouter au panier</button>
+    </div>
+    <div class="product-item">
+        <img src="roomf2.jpeg" alt="Produit 2" class="product-image">
+        <p class="price">Prix : 633€</p>
+        <button class="add-to-cart" onclick="addToCart('Produit 2')">Ajouter au panier</button>
+    </div>
+    <div class="product-item">
+        <img src="roomf3.jpeg" alt="Produit 3" class="product-image">
+        <p class="price">Prix : 999€</p>
+        <button class="add-to-cart" onclick="addToCart('Produit 3')">Ajouter au panier</button>
+    </div>
+</div>
+<div class="cart-container">
+    <h2>Panier</h2>
+    <p>Total : <span id="total">0,00 €</span></p>
+</div>
+
+<script src="script.js">
+let total = 0;
+
+function addToCart(price, productName) {
+    total += price;
+    document.getElementById('total').textContent = total.toFixed(2) + " €";
+    alert(productName + " a été ajouté au panier !");
+}
+</script>
+</body>
+</html>
